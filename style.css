@@ -1,0 +1,304 @@
+body {
+
+    box-sizing: border-box;
+    margin: 40px 200px 0 100px;
+    background-image: url(img/background1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#todoliste {
+    box-shadow: 0 0 20px #765e26;
+    background-color: #fff;
+    margin-right: 100px;
+    padding-bottom: 50px;
+    border-radius: 19px;
+
+
+}
+
+/*header*/
+header {
+    display: flex;
+
+}
+
+#imgheader {
+
+    width: 40%;
+
+}
+
+#titre {
+
+    font-family: 'Yellowtail', cursive;
+    font-size: 90px;
+    margin-left: -600px
+}
+
+#soustitre {
+    position: relative;
+    transform: translateY(170px);
+
+}
+
+
+/* formule*/
+#fill {
+    display: flex;
+}
+
+b {
+    color: red;
+    font-size: 40px;
+    margin-left: 70px;
+
+}
+
+#img2 {
+    width: 50%;
+    margin-left: 200px
+}
+
+#pen {
+    animation: rwite 2s infinite;
+    width: 15%;
+    margin-bottom: -80px;
+    margin-left: 170px;
+    margin-top: 10px;
+
+
+}
+
+form {
+    box-sizing: border-box;
+
+    margin-left: 140px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    background-image: url(img/paper.jpg);
+    background-size: cover;
+
+    width: 600px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 2%;
+    text-align: center;
+
+}
+
+label {
+    color: #fff;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-left: 30px;
+}
+
+input[id="Task"] {
+    border: none;
+    height: 30px;
+    width: 200px;
+    resize: vertical;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+input[id="Description"] {
+    border: none;
+    margin-bottom: 20px;
+    resize: vertical;
+    height: 50px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+input[type="date"] {
+    color: rgb(78, 88, 149);
+    margin: 30px 0 30px 0;
+}
+
+button {
+    position: relative;
+    margin-right: 70px;
+    margin-left: 130px;
+    transform: translateX(110px);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    height: 40px;
+    width: 120px;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 20px
+}
+
+#add {
+    background-color: rgb(225, 70, 35);
+}
+
+#reset {
+    background-color: rgba(173, 174, 184, 1);
+}
+
+#add:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+#reset:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+/* switch */
+.switch {
+    box-sizing: border-box;
+    position: relative;
+    left: 40px;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #D9D9D9;
+
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #888280;
+
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+
+}
+
+.slider {
+    border-radius: 34px;
+}
+
+.slider:before {
+    border-radius: 50%;
+}
+
+/*list of tasks */
+#ListOfTasks>h2 {
+    margin-top: 60px;
+
+}
+
+ul {
+    border: none;
+    width: 800px;
+    list-style-type: none;
+}
+
+li {
+    margin: 100px 0 30px 50px;
+
+}
+
+#tasktitle {
+    background-color: rgba(233, 196, 188, 1);
+    padding: 20px 20px 20px 20px;
+    width: 200px;
+}
+
+#tasksDescription {
+    background-color: rgba(233, 196, 188, 0.4);
+    margin-right: 100px;
+    padding: 10px 0 10px 10px;
+}
+
+i {
+    cursor: pointer;
+    margin: 10px 40px 10px 10px;
+}
+
+#urg {
+
+    width: 70px;
+    height: 70px;
+    position: relative;
+    left: 450px;
+    bottom: 220px;
+
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.2)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+#urg:hover {
+    transform: rotate(360deg);
+}
+
+#Done {
+    color: black;
+    margin: 0;
+}
+
+hr {
+    border-color: red;
+    height: 4px;
+    background-color: red;
+}
+
+
+
+@keyframes rwite {
+    0% {}
+
+    50% {
+        transform: rotate(20deg);
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: rotate(10deg);
+    }
+
+    ;
+}
+ 
+
+
+
+  

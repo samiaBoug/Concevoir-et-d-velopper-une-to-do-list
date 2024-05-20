@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@1&family=Poppins&family=Yellowtail&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Yellowtail&display=swap" rel="stylesheet">
+    <title>ToDo List</title>
+</head>
+<body>
+    <div id="todoliste">
+    <header>
+        <div id="penContainer">
+<img src="img/img-header.png" alt="" id="imgheader">
+</div>
+ <h2 id="titre"> TO DO </h2> 
+    <h1 id="soustitre"> LIST </h1>
+   
+    </header>
+
+   
+    <section id="Home">
+        <h2> <b> Your </b> daily guide to getting things done. </h2>
+        <img src="img/img-home.png" alt="" id="img2">
+    </section>
+    <section id="Formule">
+        <div id="fill">
+        <h2> <b> Fill </b> in the task information here </h2>
+        <img src="img/pen.png" alt="" id="pen">
+        </div>
+        <form id="form">
+            <label for="Task">Task :</label>
+            <input type="text" id="Task"><br>
+            <label for="Description">Description :</label>
+            <input type="text" id="Description"><br>
+            <label for="dateFrom"> From :</label>
+            <input type="date" id="dateFrom">
+            <label for="dateTo"> To :</label>
+            <input type="date" id="dateTo"> <br><br>
+            <label for="priority"> priority : </label>
+            <label class="switch">
+                <input type="checkbox" id="priority">
+                <span class="slider round"></span>
+            </label>
+
+        </form>
+        <button type="button" id="add" onclick="add()"> Add </button>
+        <button type="button" id="reset" onclick="Reset()"> Reset </button>
+       
+    </section>
+    <section id="ListOfTasks">
+        <h2> <b> Catch up </b> on tasks </h2>
+        <div id="mylist">
+       <ul id="ul">
+
+       </ul>
+        </div>
+         
+    </section>
+    
+</div>
+   <script src="scripte.js"></script> 
+</body>
+</html>
